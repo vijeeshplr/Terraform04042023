@@ -1,0 +1,10 @@
+/.terraform
+/.terraform.lock.hcl
+/EC2
+/generated
+/main.tf
+/rds
+/scriptdir
+/terraform.tfstate
+/terraform.tfstate.backup
+/terraformer
