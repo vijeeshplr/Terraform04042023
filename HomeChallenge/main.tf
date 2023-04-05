@@ -49,6 +49,20 @@ resource "aws_instance" "homechallengedev01" {
   }
       
 }
+
+# Create Instance & Enable SSH key-based authentication for accessing the virtual machine instance.
+resource "aws_instance" "homechallengedev02" {
+  ami           = var.ami_id
+  instance_type = var.instance_type
+  key_name      = var.ssh_key_name
+  vpc_security_group_ids = [aws_security_group.ssh_https.id]
+  subnet_id     = var.subnet_id
+  #associate_public_ip_address = var.enable_public_ip
+  tags = {
+    Name = "homechallengedev02"
+  }
+      
+}
   
 # Create Instance & Enable SSH key-based authentication for accessing the virtual machine instance.
 resource "aws_instance" "ansiblecontrolnode01" {
