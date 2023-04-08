@@ -1,5 +1,4 @@
-name: Terraform Plan
-
+name: "terraform"
 on:
   push:
     branches:
@@ -19,7 +18,7 @@ jobs:
       - name: Configure Terraform
         uses: hashicorp/setup-terraform@v1
         with:
-          terraform_version: '1.0.5'
+          terraform_version: '1.4.2'
       
       - name: Terraform Init
         run: terraform init
