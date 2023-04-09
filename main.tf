@@ -18,10 +18,3 @@ module "elasticdev"{
  source = "./EC2"
 }
 
-module "tf-state" {
-
-    source = "./CI-CD/tf-state"
-    bucket_name  = "cc-tf-state-backend-ci-cd"
-  
-}
-
