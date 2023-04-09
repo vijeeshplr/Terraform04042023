@@ -28,15 +28,18 @@ jobs:
 
       - name: Terraform Format
         id: fmt
+        working-directory: ./src
         run: terraform fmt -check
 
       - name: Terraform Init
-        id: init
+        working-directory: ./src
         run: terraform init
 
       - name: Terraform Plan
         id: plan
+        working-directory: ./src
         run: terraform plan -no-color
 
       - name: Terraform Apply
+        working-directory: ./src
         run: terraform apply -auto-approve
