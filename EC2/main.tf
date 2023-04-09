@@ -22,18 +22,3 @@ resource "aws_instance" "elasticserverdev3" {
   }
 }
 
-resource "aws_instance" "destroy_instance" {
-  instance_id = var.instance_id
-  count       = var.count
-  depends_on  = [aws_instance.destroy_instance]
-  lifecycle {
-    ignore_changes = [
-      instance_type,
-      user_data,
-      ami,
-      ebs_block_device,
-      network_interface,
-      source_dest_check,
-    ]
-  }
-}

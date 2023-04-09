@@ -1,0 +1,1 @@
+{"Modules":[{"Key":"","Source":"","Dir":"."},{"Key":"elasticdev","Source":"./EC2","Dir":"EC2"},{"Key":"tf-state","Source":"./CI-CD/tf-state","Dir":"CI-CD/tf-state"}]}
