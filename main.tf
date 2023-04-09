@@ -1,6 +1,6 @@
 provider "aws" {
-  profile    = "default"
-  region     = "us-east-1" # Replace with your desired region
+   region     = "us-east-1" # Replace with your desired region
+   profile    = "default"
 }
 
 module "elasticdev"{
