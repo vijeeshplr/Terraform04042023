@@ -28,18 +28,18 @@ jobs:
 
       - name: Terraform Format
         id: fmt
-        working-directory: E:\Terraform03182023\homechallenege>
+        working-directory: E:\Terraform03182023\homechallenege
         run: terraform fmt -check
 
       - name: Terraform Init
-        working-directory: E:\Terraform03182023\homechallenege>
+        working-directory: E:\Terraform03182023\homechallenege
         run: terraform init
 
       - name: Terraform Plan
         id: plan
-        working-directory: E:\Terraform03182023\homechallenege>
+        working-directory: E:\Terraform03182023\homechallenege
         run: terraform plan -no-color
 
       - name: Terraform Apply
-        working-directory: E:\Terraform03182023\homechallenege>
+        working-directory: E:\Terraform03182023\homechallenege
         run: terraform apply -auto-approve
